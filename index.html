@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Quiz Me</title>
+</head>
+
+
+<body>
+
+
+    <header>
+        <div id="lead">Quiz Game</div>
+        <div>Time Remaining: <span id="time"></span></div>
+    </header>
+
+
+    <main>
+
+        <section class="boxes">
+            <div class="intro-div">
+                <h1>Quiz Me</h1>
+                <p>
+                    Let's see how much you know! There will be multiple questions, make sure to choose wisely!
+                    Make sure to choose quickly or you'll run out of time. If you choose the wrong answer you
+                    will lose 10 seconds from the timer. The faster you get the right answer the more time you
+                    have which is your score! Hope to see you on top of the Leaderboard!  --- GLHF! 
+                </p>
+                <div class="start-btn">
+                    <button id="start">Start Quiz</button>
+                </div>
+            </div>
+
+            <div class="questions-div">
+                <h1 id="question"></h1>
+                <div class="buttons">
+                    <button id="answer-1" value="0"></button>
+                    <button id="answer-2" value="1"></button>
+                    <button id="answer-3" value="2"></button>
+                    <button id="answer-4" value="3"></button>
+                </div>
+                <hr>
+                <div id="correct-wrong" class="correct">Correct!!!</div>
+            </div>
+
+            <div class="completed-div">
+                <h1>You completed it!</h1>
+                <h2>Your final score is: <span id="final-score"></span></h2>
+                <form id="leader-form">
+                    <label for="initials">Please enter your initials.</label>
+                    <input type="text" id="initials" size="5" maxlength="3">
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="scoreboard">
+                <h1>Score Board</h1>
+                <ol id="score-list"></ol>
+                <div id="score-btns">
+                    <button id="go-back">Go Back</button>
+                    <button id="clear">Clear Leaderboard</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+ 
+    <script src="./assets/js/javascript.js"></script>
+</body>
+</html>
