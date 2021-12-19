@@ -37,9 +37,25 @@ main .boxes h1 {
     text-align: center;
 }
 
-main .boxes .intro-div {
-    display: block;
+.container {
+    font-size: 1.5rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
 }
+
+#clear {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+}
+
+#leave {
+    display: inline-flex;
+}
+
+
 
 main .boxes .intro-div p {
     padding-bottom: 20px;
@@ -65,15 +81,13 @@ main div.start-btn button:hover {
     background-color: rgb(190, 133, 17);
 }
 
-main .boxes .questions-div {
-    display: none;
+
+
+button:hover {
+    background-color: rgb(190, 133, 17);
 }
 
-main .boxes .questions-div .buttons {
-    margin-bottom: 10px;
-}
-
-main .boxes .questions-div .buttons button {
+button {
     display: block;
     font-size: 1.4rem;
     background-color: darkorange;
@@ -86,29 +100,6 @@ main .boxes .questions-div .buttons button {
 
 main .boxes .questions-div .buttons button:hover {
     background-color: rgb(190, 133, 17);
-}
-
-main .boxes .questions-div #correct-wrong {
-    display: none;
-    transition: 0.4s;
-}
-
-main .boxes .questions-div .correct {
-    padding: 10px;
-    margin-top: 10px;
-    background-color: darkorange;
-    font-weight: bold;
-}
-
-main .boxes .questions-div .wrong {
-    padding: 10px;
-    margin-top: 10px;
-    background-color: darkorange;
-    font-weight: bold;
-}
-
-main .boxes .completed-div {
-    display: none;
 }
 
 main .boxes .completed-div h2 {
@@ -142,9 +133,9 @@ main .boxes .completed-div button:hover {
     background-color: rgb(190, 133, 17);
 }
 
-main .boxes .scoreboard {
+/* .hide {
     display: none;
-}
+} */
 
 main .boxes .scoreboard ol {
     padding: 10px 10px 10px 20px;
@@ -168,3 +159,4 @@ main .boxes .scoreboard div#score-btns button {
 main .boxes .scoreboard div#score-btns button:hover {
     background-color: rgb(190, 133, 17);
 }
+
