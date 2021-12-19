@@ -11,7 +11,7 @@ If you choose wrong you will be penalized 10 secounds from the 60 seconds in the
 
  ![Homepage](/assets/images/Intro.png)
  ______________________________________________________________________________________
- Visit my site! [Code-Me](https://danprogramsit.github.io/Quiz-Me/)
+ Visit my site! [Quiz-Me](https://danprogramsit.github.io/Quiz-Me/)
 
 
 
