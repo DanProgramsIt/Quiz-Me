@@ -35,6 +35,8 @@ var ques1 = document.createElement("li")
 var ques2 = document.createElement("li")
 var ques3 = document.createElement("li")
 var ques4 = document.createElement("li")
+
+// Buttons for answers.
 var set1 = document.createElement("button")
 var set2 = document.createElement("button")
 var set3 = document.createElement("button")
@@ -44,7 +46,7 @@ var input = document.createElement("input")
 
 
 
-
+// Question array with answers.
 var questionsArr = [
     {
         title: "Which Marvel Avenger shoots arrow?",
@@ -68,6 +70,8 @@ var questionsArr = [
     },
 ];
 
+
+// shows the questions
 function showQuestions() {
 
     if (index === 0) {
@@ -86,6 +90,8 @@ function showQuestions() {
         set3.textContent = questionsArr[index].choices[2]
         set4.textContent = questionsArr[index].choices[3]
 
+        // shows element on page.
+
         ques1.appendChild(set1);
         ques2.appendChild(set2);
         ques3.appendChild(set3);
@@ -97,7 +103,7 @@ function showQuestions() {
         questionContainer.appendChild(showQ);
         questionContainer.appendChild(answers);
 
-
+        // multiple choice buttons.
         set1.addEventListener("click", answerSelect);
         set2.addEventListener("click", answerSelect);
         set3.addEventListener("click", answerSelect);
@@ -113,6 +119,8 @@ function showQuestions() {
 
 function answerSelect() {
 
+
+    // Element for the wrong / currect answers.
     var correct = document.createElement("h6")
     var wrong = document.createElement("h6")
     correct.textContent = "Correct"
@@ -142,6 +150,7 @@ function answerSelect() {
 
     else {
 
+            // 10 sec. penalty if answer is wrong.
         if (time >= 10) {
             time = time - 10;
         }
@@ -149,6 +158,7 @@ function answerSelect() {
         timeEl.textContent = time;
 
 
+        // take away 10 point from score on wrong choice.
         maxScore = maxScore - 10;
         console.log(maxScore)
         questionContainer.appendChild(wrong);
@@ -181,13 +191,18 @@ function startTimer() {
     }, 600);
 }
 
+
+// Clears questions and answers.
 function clearAll() {
     var removeAnwsers = document.getElementById("questions-div");
     removeAnwsers.style.display = "none";
 }
 
 
+// Shows the results to the player with there initials
 function showScoreBoard() {
+
+    // get score
     finalScore.textContent = maxScore;
     clearInterval(timer);
     gameOver.style.display = "block";
@@ -200,11 +215,15 @@ function lastRegist() {
     listScore = JSON.parse(localStorage.getItem("Scores"));
 };
 
+
+// Local Storage
 function saveScore() {
 
     var playerInitial = document.querySelector("#initials").value;
     var playerScore = maxScore;
 
+
+    // checks for initials
     if (playerInitial === "") {
 
         alert("Please provide initials");
