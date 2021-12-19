@@ -4,7 +4,7 @@ Hello and welcome to the Quiz game!
 
 The player will start the quiz once they click on the button, when the button is clicked the time will start to count down. When the the 1st button is clicked, the intro disappears and the player will be shown one question at a time.
 
-If you choose wrong you will be penalized 10 secounds from the 60 secounds in the quiz.
+If you choose wrong you will be penalized 10 secounds from the 60 seconds in the quiz.
 
 
 
