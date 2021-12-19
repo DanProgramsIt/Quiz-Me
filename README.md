@@ -17,7 +17,7 @@ If you choose wrong you will be penalized 10 secounds from the 60 seconds in the
 
 This shows a question with diffrent answers to be selected by the player.
 
- ![show the question wit possible answer](/assets/images/Question.jpg)
+ ![show the question wit possible answer](/assets/images/Questions.jpg)
  ________________________________________________________________________________________
 
 The player can save their score and initials by displaying a form.
